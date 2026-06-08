@@ -55,7 +55,7 @@ Zheng Zheng
 
 ## Citations
 
-If you adopt the subroutines related to the implementation of the method in the Appendix A of [Li & Zheng (2026)](https://), please cite the paper accordingly.
+If you adopt any subroutine related to the implementation of the method in the Appendix A of [Li & Zheng (2026)](https://), please cite the paper accordingly.
 
 ## License
 
