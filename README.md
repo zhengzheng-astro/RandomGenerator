@@ -1,10 +1,12 @@
 # Code for sampling the distribution of atomic velocity along the photon direction used in Lyman-alpha radiative transfer
 
 The C code provides the implementation of the method in the Appendix A of [Li & Zheng (2026)](https://) (LZ26) to sample the velocity distribution of Hydrogen atoms along the propagration direction of a Lyman-alpha photon, a key component in Monte Carlo simulations of Lyman-alpha radiative transfer. For comparison purpose, it also includes methods found in literature, such as [Zheng & Miralda-Escude (2002)](https://ui.adsabs.harvard.edu/abs/2002ApJ...578...33Z), [Semelin et al. (2007)](https://ui.adsabs.harvard.edu/abs/2007A%26A...474..365S), [Smith et al. (2015)](https://ui.adsabs.harvard.edu/abs/2015MNRAS.449.4336S), and [Michel-Dansac et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...635A.154M) (RASCAS). The distribution follows\
+
 $$
 f(u) \propto \frac{e^{-u^2}}{(x-u)^2+a^2},
-$$\
-where $u$ is in units of the thermal velocity $b=\sqrt{2k_{\rm B}T/m_{\rm H}}$, $a=4.7\times 10^{-4}(T/10^4\, {\rm K})^{-1/2}$ is half of the Ly $\alpha$ natural line width in frequency and $x$ is the Ly $\alpha$ line frequency shift, both in units of the Doppler frequency width $\Delta\nu_{\rm D}=\nu_\alpha b/c$ (with $\nu_\alpha$ the line center frequency of Ly $\alpha$). 
+$$
+
+where $u$ is in units of the thermal velocity $b=\sqrt{2k_{\rm B}T/m_{\rm H}}$, $a=4.7\times 10^{-4}(T/10^4 {\rm K})^{-1/2}$ is half of the Ly $\alpha$ natural line width in frequency and $x$ is the Ly $\alpha$ line frequency shift, both in units of the Doppler frequency width $\Delta\nu_{\rm D}=\nu_\alpha b/c$ (with $\nu_\alpha$ the line center frequency of Ly $\alpha$). 
 
 The basic random number generator for random deviates uniformly distributed in [0,1) is based on the Mersenne Twister method, implemented in the GNU Scientific Library (GSL). You can replace it with your favorite one.
 
