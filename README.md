@@ -1,6 +1,6 @@
 # Code for sampling the distribution of atomic velocity along the photon direction used in Lyman-alpha radiative transfer
 
-The C code provides the implementation of the method in the Appendix A of [Li & Zheng (2026)](https://) (LZ26) to sample the velocity distribution of Hydrogen atoms along the propagration direction of a Lyman-alpha photon, a key component in Monte Carlo simulations of Lyman-alpha radiative transfer. For comparison purpose, it also includes methods found in literature, such as [Zheng & Miralda-Escude (2002)](https://ui.adsabs.harvard.edu/abs/2002ApJ...578...33Z), [Semelin et al. (2007)](https://ui.adsabs.harvard.edu/abs/2007A%26A...474..365S), [Smith et al. (2015)](https://ui.adsabs.harvard.edu/abs/2015MNRAS.449.4336S), and [Michel-Dansac et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...635A.154M) (RASCAS). The distribution follows
+The C code provides the implementation of the method in the Appendix A of [Li & Zheng (2026)](https://arxiv.org/abs/2606.27423) (LZ26) to sample the velocity distribution of Hydrogen atoms along the propagration direction of a Lyman-alpha photon, a key component in Monte Carlo simulations of Lyman-alpha radiative transfer. For comparison purpose, it also includes methods found in literature, such as [Zheng & Miralda-Escude (2002)](https://ui.adsabs.harvard.edu/abs/2002ApJ...578...33Z), [Semelin et al. (2007)](https://ui.adsabs.harvard.edu/abs/2007A%26A...474..365S), [Smith et al. (2015)](https://ui.adsabs.harvard.edu/abs/2015MNRAS.449.4336S), and [Michel-Dansac et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...635A.154M) (RASCAS). The distribution follows
 
 $$
 f(u) \propto \frac{e^{-u^2}}{(x-u)^2+a^2},
@@ -55,7 +55,7 @@ Zheng Zheng
 
 ## Citations
 
-If you adopt any subroutine related to the implementation of the method in the Appendix A of [Li & Zheng (2026)](https://), please cite the paper accordingly.
+If you adopt any subroutine related to the implementation of the method in the Appendix A of [Li & Zheng (2026)](https://arxiv.org/abs/2606.27423), please cite the paper accordingly.
 
 ## License
 
